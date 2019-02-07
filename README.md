@@ -1,4 +1,6 @@
-# windows2016
+# Vagrantbox Windows 2016
+
+[![Vagrant](https://img.shields.io/badge/vagrant-windows_2016-orange.svg)]()
 
 #Prerequisites
 * Vagrant - https://releases.hashicorp.com/vagrant/2.1.4/vagrant_2.1.4_x86_64.msi
