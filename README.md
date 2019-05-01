@@ -1,6 +1,6 @@
 # Vagrantbox Windows 2016
 
-[![Vagrant](https://img.shields.io/badge/vagrant-windows_2016-orange.svg)]()
+![Vagrant](https://img.shields.io/badge/vagrant-windows_2016-orange.svg) ![vagrant-windows2016](https://img.shields.io/github/issues/spy86/vagrant-windows2016.svg) ![vagrant-windows2016](https://img.shields.io/github/forks/spy86/vagrant-windows2016.svg) ![vagrant-windows2016](https://img.shields.io/github/stars/spy86/vagrant-windows2016.svg) ![vagrant-windows2016](https://img.shields.io/github/license/spy86/vagrant-windows2016.svg) ![vagrant-windows2016](https://img.shields.io/twitter/url/https/github.com/spy86/vagrant-windows2016.svg?style=social)
 
 ## Prerequisites
 * Vagrant - https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.msi
