@@ -1,13 +1,58 @@
-# Vagrantbox Windows 2016
+# Vagrant Windows Server 2016
 
-![Vagrant](https://img.shields.io/badge/vagrant-windows_2016-orange.svg) ![vagrant-windows2016](https://img.shields.io/github/issues/spy86/vagrant-windows2016.svg) ![vagrant-windows2016](https://img.shields.io/github/forks/spy86/vagrant-windows2016.svg) ![vagrant-windows2016](https://img.shields.io/github/stars/spy86/vagrant-windows2016.svg) ![vagrant-windows2016](https://img.shields.io/github/license/spy86/vagrant-windows2016.svg) ![vagrant-windows2016](https://img.shields.io/twitter/url/https/github.com/spy86/vagrant-windows2016.svg?style=social)
+This repository contains a Vagrantfile for provisioning a Windows web server using VirtualBox
 
 ## Prerequisites
-* Vagrant - https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.msi
-* Virtualbox - http://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-Win.exe
-* Vagrant Reload Provisioner - open powershell console and run `vagrant plugin install vagrant-reload`
 
-## How to use?
+Before you begin, make sure you have the following installed on your machine:
 
-1. Clone https://github.com/spy86/vagrant-windows2016
-2. Run `vagrant up` from terminal and wait while virtual machine is installed.
+- [Vagrant](https://www.vagrantup.com/)
+- [VirtualBox](https://www.virtualbox.org/)
+
+## Usage
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/Think-Cube/VagrantWindowsServer2016.git
+   cd VagrantWindowsServer2016
+   ```
+
+2. Edit the Vagrantfile to customize the configuration if needed.
+
+3. Bring up the virtual machine:
+
+    ```bash
+    vagrant up
+    ```
+
+4. Connect to the Windows web server using WinRM:
+
+    ```bash
+    vagrant winrm webserver01
+    ```
+
+## Configuration
+
+### Windows Server
+
+- **Box:** fujiiface/2012r2
+- **Hostname:** windows-webserver01
+- **IP Address:** 192.168.57.3 (change as needed)
+- **WinRM Credentials:**
+  - **Username:** vagrant
+  - **Password:** vagrant
+
+### Virtual Machine Settings
+
+- **Memory:** 2048 MB
+
+- **CPUs:** 2
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Contribution
+
+Feel free to contribute by opening issues or pull requests. Your feedback and improvements are highly appreciated!
